@@ -10,60 +10,46 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180607150836) do
+ActiveRecord::Schema.define(version: 20180607184226) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "cities", force: :cascade do |t|
-    t.bigint "countries_id"
-    t.string "location"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["countries_id"], name: "index_cities_on_countries_id"
-  end
-
-  create_table "countries", force: :cascade do |t|
-    t.bigint "trips_id"
-    t.string "location"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["trips_id"], name: "index_countries_on_trips_id"
-  end
-
   create_table "entries", force: :cascade do |t|
-    t.bigint "cities_id"
     t.string "description"
     t.string "restaurants"
     t.string "hotels"
     t.string "tours"
     t.date "dates"
     t.string "photos"
+    t.integer "place_id"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["cities_id"], name: "index_entries_on_cities_id"
+  end
+
+  create_table "places", force: :cascade do |t|
+    t.string "location"
+    t.integer "trip_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "trips", force: :cascade do |t|
     t.string "name"
     t.date "dates"
     t.string "flights"
-    t.string "decsription"
-    t.bigint "users_id"
+    t.string "description"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["users_id"], name: "index_trips_on_users_id"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
-    t.string "password"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "cities", "countries", column: "countries_id"
-  add_foreign_key "countries", "trips", column: "trips_id"
-  add_foreign_key "entries", "cities", column: "cities_id"
-  add_foreign_key "trips", "users", column: "users_id"
 end

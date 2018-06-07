@@ -1,3 +1,4 @@
 class Entry < ApplicationRecord
-  belongs_to :cities
+  belongs_to :user
+  belongs_to :places 
 end

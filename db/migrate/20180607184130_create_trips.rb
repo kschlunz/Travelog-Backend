@@ -4,8 +4,8 @@ class CreateTrips < ActiveRecord::Migration[5.1]
       t.string :name
       t.date :dates
       t.string :flights
-      t.string :decsription
-      t.references :users, foreign_key: true
+      t.string :description 
+      t.integer :user_id
 
       t.timestamps
     end

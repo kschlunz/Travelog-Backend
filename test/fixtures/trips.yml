@@ -4,12 +4,10 @@ one:
   name: MyString
   dates: 2018-06-07
   flights: MyString
-  decsription: MyString
-  users: one
+  descripition: MyString
 
 two:
   name: MyString
   dates: 2018-06-07
   flights: MyString
-  decsription: MyString
-  users: two
+  descripition: MyString

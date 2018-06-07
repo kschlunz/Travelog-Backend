@@ -1,13 +1,14 @@
 class CreateEntries < ActiveRecord::Migration[5.1]
   def change
     create_table :entries do |t|
-      t.references :cities, foreign_key: true
       t.string :description
       t.string :restaurants
       t.string :hotels
       t.string :tours
       t.date :dates
       t.string :photos
+      t.integer :place_id
+      t.integer :user_id
 
       t.timestamps
     end

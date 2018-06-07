@@ -1,7 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  cities: one
   description: MyString
   restaurants: MyString
   hotels: MyString
@@ -10,7 +9,6 @@ one:
   photos: MyString
 
 two:
-  cities: two
   description: MyString
   restaurants: MyString
   hotels: MyString
