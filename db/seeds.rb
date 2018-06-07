@@ -20,6 +20,6 @@ places2 = Place.create(location: "South Korea", trip_id:1)
 places3 = Place.create(location: "Thailand", trip_id:2)
 places4 = Place.create(location: "Cambodia", trip_id:2)
 
-entry1 = Entry.create(description: "SO HOT", restaurants: "SUSHI", hotels: "A POD", dates: "2018-02-03", photos: "COMING SOON", place_id:1, user_id:2)
+entry1 = Entry.create(description: "SO HOT", restaurants: "SUSHI", hotels: "A POD", dates: "2018-02-03", photos: "COMING SOON", place_id:1, user_id:1)
 
-entry2 = Entry.create(description: "its okay", restaurants: "PADTHAI", hotels: "bamboo hut", dates: "2018-02-03", photos: "COMING SOON", place_id:3, user_id:1)
+entry2 = Entry.create(description: "its okay", restaurants: "PADTHAI", hotels: "bamboo hut", tours: "elephants" dates: "2018-02-03", photos: "COMING SOON", place_id:1, user_id:1)

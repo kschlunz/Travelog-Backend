@@ -2,8 +2,11 @@ class Api::V1::TripsController < ApplicationController
   before_action :set_params, only: [:show,:update,:destroy]
 
   def index
+    
+
     trip = Trip.all
     render json: trip, status: 200
+
   end
 
   def create
