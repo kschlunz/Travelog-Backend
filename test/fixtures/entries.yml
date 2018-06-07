@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cities: one
+  description: MyString
+  restaurants: MyString
+  hotels: MyString
+  tours: MyString
+  dates: 2018-06-07
+  photos: MyString
+
+two:
+  cities: two
+  description: MyString
+  restaurants: MyString
+  hotels: MyString
+  tours: MyString
+  dates: 2018-06-07
+  photos: MyString
