@@ -5,7 +5,9 @@ class Api::V1::PlacesController < ApplicationController
 
 
     place = Place.all
+    
     render json: place, status: 200
+
 
   end
 

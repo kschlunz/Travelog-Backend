@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     resources :places
     resources :trips
     resources :entries
-    resources :users
+    resources :users 
     resources :sessions
   end
 end
