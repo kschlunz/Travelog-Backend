@@ -5,7 +5,7 @@ class Api::V1::PlacesController < ApplicationController
 
 
     place = Place.all
-    
+
     render json: place, status: 200
 
 
@@ -17,6 +17,7 @@ class Api::V1::PlacesController < ApplicationController
   end
 
   def update
+    
     @place.update(place_params)
     render json: @place, status: 200
   end
@@ -37,6 +38,6 @@ class Api::V1::PlacesController < ApplicationController
   end
 
   def set_params
-    @trip = Trip.find(params[:id])
+    @place = Place.find(params[:id])
   end
 end

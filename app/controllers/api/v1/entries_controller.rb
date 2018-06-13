@@ -7,6 +7,7 @@ class Api::V1::EntriesController < ApplicationController
   end
 
   def create
+    
     entry = Entry.create(entry_params)
     render json: entry, status: 201
   end
@@ -28,7 +29,7 @@ class Api::V1::EntriesController < ApplicationController
 
   private
   def entry_params
-    params.permit(:description, :restaurants, :hotels, :tours, :dates, :photos, :cities_id )
+    params.require(:entry).permit(:description, :restaurants, :hotels, :tours, :place_id, :user_id)
   end
 
   def set_params
