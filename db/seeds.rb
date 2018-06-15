@@ -19,7 +19,7 @@ nepal = Trip.create(name: "Nepal-Basecamp", dates: "2015-03-003", flights: "MH30
 
 places1 = Place.create(location: "Tokyo", trip_id:1)
 places2 = Place.create(location: "Seol", trip_id:1)
-places3 = Place.create(location: "Bangkok", trip_id:2)
+places3 = Place.create(location: "Bangkok", trip_id:2, lat: 13.7563, lng:100.5018)
 places4 = Place.create(location: "Siem Riep", trip_id:2)
 places5 = Place.create(location: "New Dehli", trip_id:3)
 places6 = Place.create(location: "Agra", trip_id:3)

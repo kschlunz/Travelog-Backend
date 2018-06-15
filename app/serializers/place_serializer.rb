@@ -7,6 +7,6 @@ class PlaceSerializer < ActiveModel::Serializer
   end
 
 
-  attributes :id, :location, :trip_id
+  attributes :id, :location, :trip_id, :lat, :lng
 
 end

@@ -17,7 +17,7 @@ class Api::V1::PlacesController < ApplicationController
   end
 
   def update
-    
+
     @place.update(place_params)
     render json: @place, status: 200
   end
@@ -34,7 +34,7 @@ class Api::V1::PlacesController < ApplicationController
 
   private
   def place_params
-    params.permit(:location, :trip_id )
+    params.require(:place).permit(:location, :trip_id, :lat, :lng )
   end
 
   def set_params

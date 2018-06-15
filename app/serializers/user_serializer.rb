@@ -3,7 +3,7 @@ class UserSerializer < ActiveModel::Serializer
 
 
   def trips
-    object.trips.map { |e| {tripID: e.id, name: e.name, dates: e.dates, flights: e.flights, description: e.description, places:e.places.map{ |j| {locationID: j.id, location: j.location, entries: j.entries} }} }
+    object.trips.map { |e| {tripID: e.id, name: e.name, dates: e.dates, flights: e.flights, description: e.description, places:e.places.map{ |j| {locationID: j.id, location: j.location, lat:j.lat, lng: j.lng, entries: j.entries} }} }
   end
 
 
