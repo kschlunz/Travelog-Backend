@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20180607184226) do
     t.string "restaurants"
     t.string "hotels"
     t.string "tours"
-    t.date "dates"
+    t.string "dates"
     t.string "photos"
     t.integer "place_id"
     t.integer "user_id"
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20180607184226) do
 
   create_table "trips", force: :cascade do |t|
     t.string "name"
-    t.date "dates"
+    t.string "dates"
     t.string "flights"
     t.string "description"
     t.integer "user_id"
