@@ -1,25 +1,26 @@
-# README
+## Travelog
+A digital memory journal for travel enthusiasts. A place to quickly record trips, places you visited on that trip, mark them on a map and add as many entries as you want with photos for that place.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I was inspired to build this project based on a problem I realized I have, which is I have traveled extensively but do not have a way of keeping an ongoing digital copy of the places and experiences I had. Rather than trying to carry around a journal which then ends up in a box somewhere I want a way to quickly record and share what I did in all of the places I visited.
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+## Demo
+https://youtu.be/PNzGll0-00Q
 
-* Configuration
+## Tech/framework used
+Ruby on Rails, Postgres Database
 
-* Database creation
 
-* Database initialization
+## Features
+The ability to make quick entries, save every place you visited on a map and organize them under trips.
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Installation
+Clone down a copy, Run Bundle Install, Run Rails S in your terminal.
 
-* Deployment instructions
 
-* ...
-# Travelog-Backend
+## License
+
+
+© [Kate Schlunz]()
