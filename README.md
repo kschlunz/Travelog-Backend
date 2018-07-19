@@ -24,6 +24,4 @@ Clone down a copy, Run Bundle Install, Run Rails S in your terminal.
   Kate Schlunz - https://github.com/kschlunz
 
 ## License
-
-
 © [Kate Schlunz, Helen Liutongco]()
